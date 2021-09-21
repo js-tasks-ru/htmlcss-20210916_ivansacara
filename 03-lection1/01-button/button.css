@@ -1,1 +1,77 @@
-/* Стилизация кнопки */
+.buttons{
+ display: flex;
+ justify-content: center;
+ padding-top: 100px;
+}
+.buttons__text{
+  margin-right: 200px;
+}
+.buttons__title{
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 500;
+}
+.buttons__content{
+  display: flex;
+  align-items: center;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+}
+.buttons__secondary{
+  margin: 0 33px;
+}
+.button__primary,
+.button__secondary,
+.button__alternate{
+  margin: 8px 0;
+}
+.btn{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 15px 0;
+  white-space: nowrap;
+  width: 189px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.btn--primary{
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+.btn--primary:hover{
+  background-color: var(--primary-hover);
+}
+.btn--primary.btn--disabled:hover{
+   background-color: var(--primary);
+}
+.btn--secondary{
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+}
+.btn--secondary:hover{
+  background-color: var(--secondary-hover);
+}
+.btn--secondary.btn--disabled:hover{
+  background-color: var(--secondary);
+}
+.btn--alternative{
+  color: var(--grey-4);
+  background-color: var(--white);
+  border: 1px solid var(--alternative);
+}
+.btn--alternative:hover{
+  border: 1px solid var(--alternative-hover);
+}
+.btn--alternative.btn--disabled:hover{
+   border: 1px solid var(--alternative);
+}
+.btn--disabled{
+  opacity: 0.5;
+  cursor: default;
+}
