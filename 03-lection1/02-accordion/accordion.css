@@ -1,7 +1,9 @@
+.wrapper {
+  margin-top: 100px;
+}
 .accordion {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
 }
 .accordion__col-title {
   font-size: 38px;
@@ -11,9 +13,9 @@
 }
 .accordion__item {
   width: 730px;
-  background: #ffffff;
+  background: var(--white);
   color: var(--black);
-  border: 1px solid #acb5bd;
+  border: 1px solid var(--grey-3);
   box-sizing: border-box;
   border-radius: 8px;
   padding: 24px 48px 24px 32px;
@@ -21,7 +23,7 @@
   display: block;
   position: relative;
 }
-.accordion__item[open] summary ~ * {
+.accordion__item[open] .accordion__title ~ * {
   animation: sweep 0.5s ease-in-out;
 }
 @keyframes sweep {
