@@ -1,0 +1,21 @@
+.footer{
+  padding: 71px 0 136px;
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+}
+.footer__title{
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 500;
+  margin: 0 0 32px;
+  
+}
+.footer__subtitle{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+}
