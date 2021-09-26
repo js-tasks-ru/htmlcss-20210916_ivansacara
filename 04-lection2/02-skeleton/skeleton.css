@@ -1,0 +1,27 @@
+.skeleton {
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 32px 40px 32px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton--circle {
+  border-radius: 100%;
+  background-color: var(--grey-2);
+  display: inline-block;
+}
+
+.skeleton--line {
+  width: 100%;
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  display: inline-block;
+}

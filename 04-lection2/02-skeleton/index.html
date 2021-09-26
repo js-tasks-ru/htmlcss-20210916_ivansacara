@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <!-- Страница со скелетоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./skeleton.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./skeleton.css">
+  <style>
+    .component-skeleton {
+      max-width: 580px;
+      width: 100%;
+    }
+
+    .component-skeleton__top-row {
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    .component-skeleton__col-circle {
+      margin-right: 16px;
+    }
+
+    .component-skeleton__circle {
+      width: 64px;
+      height: 64px;
+    }
+
+    .component-skeleton-top__col-line {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .component-skeleton__line {
+      height: 20px;
+    }
+
+    .component-skeleton-top__line-first {
+      max-width: 172px;
+    }
+
+    .component-skeleton-top__line-second {
+      max-width: 257px;
+    }
+
+    .component-skeleton__bottom-row {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .component-skeleton__indented-line {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="component-skeleton skeleton">
+    <div class="component-skeleton__top-row">
+      <div class="component-skeleton__col-circle">
+        <div class="component-skeleton__circle skeleton--circle"></div>
+      </div>
+      <div class="component-skeleton-top__col-line">
+        <div
+          class="component-skeleton__line component-skeleton-top__line-first component-skeleton__indented-line skeleton--line">
+        </div>
+        <div class="component-skeleton__line component-skeleton-top__line-second skeleton--line"></div>
+      </div>
+    </div>
+    <div class="component-skeleton__bottom-row">
+      <div class="component-skeleton__line component-skeleton__indented-line skeleton--line"></div>
+      <div class="component-skeleton__line skeleton--line"></div>
+    </div>
+
+  </div>
+
+</body>
+
 </html>
