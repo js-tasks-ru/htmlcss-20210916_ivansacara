@@ -1,0 +1,13 @@
+.preview {
+  background-color: #f9fafc;
+}
+.preview__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 65px 0 175px 0;
+  margin: 0 -5px;
+}
+.preview__card {
+  margin: 0 5px 30px;
+}
