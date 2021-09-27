@@ -5,16 +5,32 @@
   padding: 32px 40px 32px 25px;
   display: flex;
   flex-direction: column;
+  max-width: 580px;
+  width: 100%;
+}
+.skeleton__header {
+  display: flex;
+  margin-bottom: 25px;
 }
 
-.skeleton--circle {
+.skeleton__ava {
+  max-width: 64px;
+  width: 100%;
+  height: 64px;
   border-radius: 100%;
   background-color: var(--grey-2);
-  display: inline-block;
+  margin-right: 16px;
 }
 
-.skeleton--line {
+.skeleton__lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+}
+.skeleton__line {
+  width: 100%;
+  height: 20px;
   background: linear-gradient(
     92.51deg,
     #dde2e5 6.44%,
@@ -24,4 +40,15 @@
     #dde2e5 102.52%
   );
   display: inline-block;
+}
+.short {
+  max-width: 172px;
+}
+
+.middle {
+  max-width: 257px;
+}
+
+.indented {
+  margin-bottom: 8px;
 }
