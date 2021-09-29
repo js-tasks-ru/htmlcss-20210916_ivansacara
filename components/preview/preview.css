@@ -1,0 +1,9 @@
+.preview {
+  background-color: #f9fafc;
+}
+.preview__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 65px 0 175px 0;
+  gap: 30px;
+}
