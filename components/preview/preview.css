@@ -3,11 +3,7 @@
 }
 .preview__inner {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 65px 0 175px 0;
-  margin: 0 -15px;
-}
-.preview__card {
-  margin: 0 15px 30px;
+  gap: 30px;
 }
