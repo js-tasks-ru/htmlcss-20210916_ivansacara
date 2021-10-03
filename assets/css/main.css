@@ -3,6 +3,7 @@
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
 @import '../../components/card/card.css';
+@import '../../03-lection1/01-button/button.css';
 
 :root {
   --white: #ffffff;
@@ -15,6 +16,9 @@
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
+
+  --modal-bg: #c4c4c4;
+  --modal-title: #334d6e;
 
   --error: var(--red);
   --success: var(--blue);
@@ -34,6 +38,7 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 .wrapper {
