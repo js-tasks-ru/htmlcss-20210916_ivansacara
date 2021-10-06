@@ -1,11 +1,12 @@
 
 .tooltip{
     position: relative;
-    display: inline-block;
+    display: inline-block; 
 }
-.tooltip__icon svg{
-    fill: var(--black);
-    cursor: pointer;
+.tooltip__icon-inner{
+    width: 24px;
+    height: 24px;
+    color: var(--black);
 }
 .tooltip__helper{
     opacity: 0;

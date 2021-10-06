@@ -4,7 +4,6 @@
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   padding: 24px 48px 24px 32px;
-  position: relative;
 }
 .accordion[open] .accordion__title ~ * {
   animation: sweep 0.5s ease-in-out;
@@ -17,19 +16,15 @@
     opacity: 1;
   }
 }
-.accordion::before {
-  content: '';
+.accordion__icon-inner {
+  width: 24px;
+  height: 22px;
   position: absolute;
-  background-image: url(./img/arrow.svg);
-  width: 16px;
-  height: 8px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  right: 32px;
-  top: 30px;
+  right: -20px;
+  top: 0px;
   cursor: pointer;
 }
-.accordion[open]::before {
+.accordion[open] .accordion__icon-inner {
   transform: rotate(180deg);
 }
 .accordion__title {
@@ -40,6 +35,7 @@
   color: var(--black);
   list-style-type: none;
   cursor: pointer;
+  position: relative;
 }
 
 .accordion__text {
