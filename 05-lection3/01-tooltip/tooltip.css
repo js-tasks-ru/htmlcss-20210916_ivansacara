@@ -1,50 +1,52 @@
-
-.tooltip{
-    position: relative;
-    display: inline-block; 
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
-.tooltip__icon-inner{
-    width: 24px;
-    height: 24px;
-    color: var(--black);
+.tooltip__icon-inner {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
 }
-.tooltip__helper{
-    opacity: 0;
-    visibility: hidden;
-    transition: .55s opacity, .55s visibility;
-    pointer-events: none;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    padding: 13px 21px 8px;
-    height: 45px;
-    background: var(--primary);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 10px;
-    box-sizing: border-box;
+.icon {
+  width: 24px;
+  height: 24px;
 }
-.tooltip__helper::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 100%) rotate(45deg);
-    width: 14px;
-    height: 14px;
-    background-color: var(--primary);
-    bottom: 10px;
-    z-index: -1;
-
+.tooltip__helper {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.55s opacity, 0.55s visibility;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  padding: 13px 21px 8px;
+  height: 45px;
+  background: var(--primary);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  box-sizing: border-box;
 }
-.tooltip__helper-text{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-2);
+.tooltip__helper::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%) rotate(45deg);
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary);
+  bottom: 10px;
+  z-index: -1;
 }
-.tooltip:hover .tooltip__helper{
-    opacity: 1;
-    visibility: visible;
+.tooltip__helper-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-2);
+}
+.tooltip:hover .tooltip__helper {
+  opacity: 1;
+  visibility: visible;
 }
