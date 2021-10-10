@@ -49,3 +49,7 @@
 .toggler__input:disabled ~ .toggler__state .toggler__controll::before {
   background-color: var(--grey-3);
 }
+
+.toggler__input:disabled ~ .toggler__state .toggler__label {
+  color: var(--grey-2);
+}
