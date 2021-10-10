@@ -57,3 +57,6 @@
 .checkbox__input:disabled ~ .checkbox__state .checkbox__controll {
   background-color: var(--grey-2);
 }
+.checkbox__input:disabled ~ .checkbox__state .checkbox__label {
+  color: var(--grey-2);
+}
