@@ -55,3 +55,6 @@
 .radio .radio__input:disabled ~ .radio__state .radio__controll {
   background-color: var(--grey-2);
 }
+.radio .radio__input:disabled ~ .radio__state .radio__label {
+  color: var(--grey-2);
+}
