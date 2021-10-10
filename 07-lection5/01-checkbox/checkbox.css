@@ -49,3 +49,26 @@
 .checkbox__input:focus ~ .checkbox__state .checkbox__label {
   text-decoration: underline;
 }
+.checkbox--disabled {
+  pointer-events: none;
+}
+
+.checkbox--disabled .checkbox__controll {
+  background-color: var(--grey-2);
+}
+.checkbox--disabled
+  .checkbox__input:checked
+  ~ .checkbox__state
+  .checkbox__icon {
+  display: none;
+}
+.checkbox--disabled
+  .checkbox__input:checked
+  ~ .checkbox__state
+  .checkbox__controll {
+  background-color: var(--grey-2);
+  border-color: var(--grey-2);
+}
+.checkbox--disabled .checkbox__input:focus ~ .checkbox__state .checkbox__label {
+  text-decoration: none;
+}
