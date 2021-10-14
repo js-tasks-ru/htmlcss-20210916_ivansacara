@@ -1,0 +1,51 @@
+.tabs__input{
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.tabs__scroller-label{
+  cursor: pointer; 
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-3);
+  transition: all 0.2s ease;
+  padding-bottom: 8px;
+  position: relative;
+}
+.tabs__scroller-label:not(:last-child){
+    margin-right: 40px;
+}
+.tabs__scroller-label:hover{
+    color: var(--black);
+}
+.tabs__scroller-label::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background-color: var(--black);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+#all-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="all-tab"],
+#elements-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="elements-tab"],
+#containers-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="containers-tab"],
+#templates-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="templates-tab"]{
+    color: var(--black);
+} 
+#all-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="all-tab"]::before,
+#elements-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="elements-tab"]::before,
+#containers-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="containers-tab"]::before,
+#templates-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="templates-tab"]::before{
+    opacity: 0.5;
+} 
+#all-tab:focus ~ .tabs__scroller .tabs__scroller-label[for="all-tab"]::before,
+#elements-tab:focus ~ .tabs__scroller .tabs__scroller-label[for="elements-tab"]::before,
+#containers-tab:focus ~ .tabs__scroller .tabs__scroller-label[for="containers-tab"]::before,
+#templates-tab:focus ~ .tabs__scroller .tabs__scroller-label[for="templates-tab"]::before{
+    opacity: 1;
+
+} 
+

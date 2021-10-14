@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Страница со скелетоном -->
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./tabs.css">
+</head>
+
+<body>
+    <div class="tabs">
+        <input class="tabs__input" type="radio" id="all-tab" name="headerTabs" checked>
+        <input class="tabs__input" type="radio" id="elements-tab" name="headerTabs">
+        <input class="tabs__input" type="radio" id="containers-tab" name="headerTabs">
+        <input class="tabs__input" type="radio" id="templates-tab" name="headerTabs">
+
+        <div class="tabs__scroller">
+            <label class="tabs__scroller-label" for="all-tab">All components</label>
+            <label class="tabs__scroller-label" for="elements-tab">Elements</label>
+            <label class="tabs__scroller-label" for="containers-tab">Containers</label>
+            <label class="tabs__scroller-label" for="templates-tab">Templates</label>
+        </div>
+
+        <div class="tabs__content tabs__content_complex">
+            <!-- Сложные компоненты -->
+        </div>
+        <div class="tabs__content tabs__content_simple">
+            <!-- Простые компоненты -->
+        </div>
+    </div>
+</body>
